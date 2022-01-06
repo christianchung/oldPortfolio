@@ -11,10 +11,21 @@
     <script src="logic.js"></script>
 </head>
 
-<body background="https://d11in36igezwwb.cloudfront.net/texts/images/000/001/226/original/clouds.jpg?1507822094">
+<body style = "background-color: rgb(243, 243, 243)">
+    <section>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </section>
     <div class="container">
         <nav>
-            <div class="nav-wrapper red darken-2">
+            <div class="nav-wrapper blue darken-2">
                 <a href="#" class="brand-logo">Christian Chung</a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
                     <li>
@@ -30,16 +41,16 @@
             </div>
         </nav>
 
-        <h2>About Me</h2>
+        <h2 class="cantSee">About Me</h2>
 
         <div class="row">
             <div class="col s7 m7">
-                <div class="card">
+                <div class="card ">
                     <div class="card-image">
                         <img src="https://pbs.twimg.com/media/DjzISn4XcAA93fD.jpg">
                     </div>
-                    <div class="card-content">
-                        <p>This is a picture of me from my hometown of North Little Rock Arkansas next to the Arkansas River. Link below for google maps location.</p>
+                    <div class="card-content image-description">
+                        <p>This is a picture of me from my hometown of North Little Rock Arkansas next to the Arkansas River.</p>
                     </div>
                     <div class="card-action">
                         <a href="https://www.google.com/maps/place/North+Little+Rock,+AR/@34.7850143,-92.3912103,11z/data=!3m1!4b1!4m5!3m4!1s0x87d299e8a05d9053:0x6677cd4b5a7bd9a1!8m2!3d34.769536!4d-92.2670941"
@@ -47,7 +58,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col s5" style="background-color:white">
+            <div class="col s5 round" style="background-color:white">
                 Hello, my name is Christian Chung and I am an aspiring web developer! I was born in Lawrenceville, Georgia but moved to North
                 Little Rock, Arkansas at a young age for my parents business ventures. This is where I spent the majority
                 of my upbringing. As a result of being raised in the state deemed the natural state, I enjoy many outdoor
@@ -58,8 +69,43 @@
             </div>
         </div>
     </div>
+    <div class="container">
+        <div class="row">
+            <div class="col projects round">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Hangman</h5>
+                        <p class="card-text">Hangman game where you guess the music artist</p>
+                        <a href="https://christianchung.github.io/hangman/" class="card-link">Deployed Version</a>
+                        <br>
+                        <a href="https://github.com/christianchung/hangman" class="card-link">Code on GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col projects round">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Giphy-API</h5>
+                        <p class="card-text">Generates gifs on depending on the button clicked.</p>
+                        <a href="https://christianchung.github.io/giphy-api/" class="card-link">Deployed Version</a>
+                        <br>
+                        <a href="https://github.com/christianchung/giphy-api" class="card-link">Code on GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col projects round">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Quick-Dish</h5>
+                        <p class="card-text">generates random entree and the corresponding recipe</p>
+                        <a href="https://github.com/Zattelin/Quick-Dish" class="card-link">Code on GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <footer>
-        <div class="container">
+        <div class="container cantSee">
             Copyright &copy;
         </div>
     </footer>

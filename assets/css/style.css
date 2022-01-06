@@ -1,0 +1,148 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+body{
+    background-image: url("https://picstatio.com/download/2560x1440/02d180/starry-night-hut-dark.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+
+
+span{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    width: 4px;
+    height: 4px;
+    background: #fff;
+    border-radius:50%;
+    box-shadow: 0 0 0 4px rgba(255,255,255,0.1),
+    0 0 0 8px rgba(255,255,255,0.1),
+    0 0 20px rgba(255,255,255,1);
+    animation: animate 3s linear infinite;
+}
+
+span::before{
+    content:'';
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    width: 300px;
+    height: 1px;
+    background: linear-gradient(90deg, #fff, transparent);
+}
+
+/* zoom on project cards */
+@keyframes animateBg{
+    0%,100%
+    {
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.05);
+    }
+}
+
+/* animates stars */
+@keyframes animate{
+    0%{
+        transform: rotate(315deg) translateX(0);
+        opacity: 1;
+    }
+    70%{
+        opacity: 1;
+    }
+    100%{
+        transform: rotate(315deg) translateX(-1000px);
+        opacity: 0;
+    }
+}
+
+span:nth-child(1){
+    top: 0;
+    right: 0;
+    animation-delay: 0;
+    animation-duration: 4s;
+}
+
+span:nth-child(2){
+    top: 0;
+    right: 80px;
+    left: initial;
+    animation-delay: 0.2s;
+    animation-duration: 3s;
+}
+
+span:nth-child(3){
+    top: 80px;
+    right: 80px;
+    left: initial;
+    animation-delay: 0.3s;
+    animation-duration: 2.5s;
+}
+
+span:nth-child(4){
+    top: 80px;
+    right: -400px;
+    left: initial;
+    animation-delay: 0.5s;
+    animation-duration: 3.5s;
+}
+
+span:nth-child(5){
+    top: 80px;
+    right: -200px;
+    left: initial;
+    animation-delay: 0.3s;
+    animation-duration: 2.6s;
+}
+
+span:nth-child(6){
+    top: 80px;
+    right: 800px;
+    left: initial;
+    animation-delay: 0.542s;
+    animation-duration: 3.264s;
+}
+
+span:nth-child(7){
+    top: 80px;
+    right: 1500px;
+    left: initial;
+    animation-delay: 0.8s;
+    animation-duration: 3.1s;
+}
+
+span:nth-child(8){
+    top: 80px;
+    right: 1376px;
+    left: initial;
+    animation-delay: 1s;
+    animation-duration: 2.3654s;
+}
+
+.image-description{
+    text-align: center;
+
+} 
+
+/* copyright and title because background is darrk */
+.cantSee{
+    color:rgb(248, 248, 248);
+}
+
+.projects{
+    animation: animateBg 5s linear infinite;
+}
+
+.round{
+    border-radius: 25px;
+}
+
