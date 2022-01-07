@@ -5,6 +5,8 @@
     box-sizing:border-box;
 }
 
+
+
 body{
     background-image: url("https://picstatio.com/download/2560x1440/02d180/starry-night-hut-dark.jpg");
     background-repeat: no-repeat;
@@ -46,7 +48,7 @@ span::before{
         transform: scale(1);
     }
     50%{
-        transform: scale(1.05);
+        transform: scale(1.10);
     }
 }
 
@@ -128,6 +130,14 @@ span:nth-child(8){
     animation-duration: 2.3654s;
 }
 
+span:nth-child(9){
+    top: 800px;
+    right: 1000px;
+    left: initial;
+    animation-delay: 1s;
+    animation-duration: 2.3654s;
+}
+
 .image-description{
     text-align: center;
 
@@ -146,3 +156,29 @@ span:nth-child(8){
     border-radius: 25px;
 }
 
+.resize{
+    width: 400px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    display:block;
+}
+
+.imageContain{
+    width: 420px;
+    height: 420px;
+    background-color: white;
+}
+
+.filler{
+    height:130px;
+}
+
+.centerFiller{
+    width:300px;
+    height:100px;
+}
+
+.centerText{
+    text-align: center;
+}
